@@ -309,3 +309,18 @@ input[type="submit"]:hover {
     }
 
 }
+
+@media screen and (max-width: 400px){
+    .title,
+    .text-hero h1 {
+        font-size: 30px;
+
+    }
+    .text-hero p {
+        font-style: 15px;
+        text-align: center;
+    }
+    .gallery-container>img {
+        width: 98%
+    }
+}
