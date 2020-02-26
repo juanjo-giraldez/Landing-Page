@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'raleway', 'sans-serif';
 }
 
 .hero {
@@ -86,6 +86,7 @@ body {
 
 .title.left {
     text-align: left;
+    color: #fff
 }
 
 .website {
@@ -113,16 +114,16 @@ body {
     text-decoration: none;
     border-radius: 10px;
     padding: 12Px 15Px;
-    color: #fff; 
+    color: #fff;
 
 }
 
-.info{
+.info {
     background: #48D597;
     color: #fff;
 }
 
-.content-cards{
+.content-cards {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -131,11 +132,11 @@ body {
 
 }
 
-.card{
+.card {
     width: 30%;
     text-align: center;
     height: 300px;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5 );
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
     transform: scale(1);
     transition: transform 0.6s;
 }
@@ -143,18 +144,168 @@ body {
 .card:hover {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
     transform: scale(1.03);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .card i {
     margin: 30px 0 20px 0;
-    color:#48D597;
+    color: #48D597;
     font-size: 55px;
+    cursor: pointer;
 }
 
 .card p {
     font-weight: 300px;
     font-size: 20px;
     margin-bottom: 10px;
-    
+
+}
+
+.gallery {
+    background: #f2f2f2;
+}
+
+.gallery-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.gallery-container>img {
+    width: 30%;
+    margin-bottom: 14px;
+    overflow: hidden;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    display: block;
+    object-fit: cover;
+
+}
+
+.last-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.last-section img {
+    width: 48%
+}
+
+.last-section .container-text-main {
+    width: 40%
+}
+
+footer {
+    color: #fff;
+    background: #48D597;
+
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+
+}
+
+.input::placeholder {
+    color: #fff;
+    font-family: 'raleway', 'sans-serif';
+
+
+}
+
+input[type="text"],
+input[type="email"] {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 25px;
+}
+
+.form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+input[type="submit"] {
+    width: 130px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: #48D597;
+    background: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    .text-hero h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .text-hero p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 35px;
+
+    }
+
+    .title.left {
+        text-align: center;
+    }
+
+    .info p {
+        text-align: center;
+    }
+
+    .website {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website img {
+        width: 100%;
+    }
+
+    .website .container-text-main {
+        width: 100%;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .gallery-container>img {
+        width: 48%
+    }
+
+    .last-section img {
+        width: 98%;
+    }
+
+    .last-section .container-text-main {
+        width: 98%;
+        margin-bottom: 60px;
+    }
+
 }
